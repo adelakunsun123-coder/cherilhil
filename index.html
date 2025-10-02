@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+<style>
+
+   .overlay-bg {
+  background: linear-gradient(rgba(174, 126, 5, 0.6), rgba(105, 105, 128, 0.6)),
+              url("vv.jpg") center/cover no-repeat;
+
+   
+   
+
+  
+ 
+  
+}
+    </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-yellow-600 text-white   fixed w-full shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">CHERIEHILL</p></h1>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#courses" class="hover:underline">Courses</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg text-white pt-32 pb-20 md:pt-40 md:pb-28  overlay-bg">
+        <div class="container mx-auto px-6 text-center overlay-bg">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">
+                Transforming <span class="text-yellow-400">Nigeria</span> Through Youth Tech Empowerment
+            </h1>
+            <p class=" md:text-2xl mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Equipping children and teenagers with practical IT skills for academic excellence, career opportunities, and leadership in a digital world.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="#partnership" class="btn-primary bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full inline-block">
+                    Partner With Us
+                </a>
+                <a href="https://sites.google.com/view/phantom-tech-academy/register" class="btn-secondary border-2 border-yellow-400 text-yellow-400 font-bold py-3 px-8 rounded-full inline-block">
+                    Enroll Your Child
+                </a>
+            </div>
+        </div>
+    </section>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-gray-900">About Us</h3>
+    <p class="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
+      Sunrise Academy is dedicated to academic excellence and holistic development of students.
+      Our experienced teachers and modern facilities ensure quality education and growth.
+    </p>
+  </section>
+
+  <!-- Courses Section -->
+<section id="courses" class="py-16 bg-yellow-600 transition">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-gray-900">Our Courses</h3>
+    <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 -->
+      <a href="ict-year2.html" 
+                class="block p-6 bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-yellow-600">
+        <h4 class="text-xl font-semibold text-blue-600">I.C.T</h4>
+        <p class="mt-2 text-gray-600">Year 2</p>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="https://forms.gle/muC989rvDu15SW5ZA" 
+                 class="block p-6 bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-yellow-600">
+        <h4 class="text-xl font-semibold text-blue-600">I.C.T</h4>
+        <p class="mt-2 text-gray-600">Year 3</p>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="ict-year4.html" 
+         class="block p-6 bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-yellow-600">
+        <h4 class="text-xl font-semibold text-blue-600">I.C.T</h4>
+        <p class="mt-2 text-gray-600">Year 4</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-gray-900">Contact Us</h3>
+    <form class="mt-8 bg-white p-8 rounded-xl shadow space-y-6">
+      <input type="text" placeholder="Your Name" class="w-full border p-3 rounded">
+      <input type="email" placeholder="Your Email" class="w-full border p-3 rounded">
+      <textarea placeholder="Your Message" class="w-full border p-3 rounded"></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-600 text-white text-center py-4">
+                    <p  class="text-center">&copy; 2023 Phantom Tech Academy. All rights reserved.</p>
+
+  </footer>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+    </script>
+
+</body>
+</html>
