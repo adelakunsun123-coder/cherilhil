@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Website</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-
-<style>
-
-   .overlay-bg {
-  background: linear-gradient(rgba(174, 126, 5, 0.6), rgba(105, 105, 128, 0.6)),
-              url("vv.jpg") center/cover no-repeat;
-
-   
-   
-
-  
- 
-  
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Tech Academy - Youth Tech Empowerment</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #FFD700;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1E3A8A;
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #FFD700;
+            color: #1E3A8A;
+            transform: translateY(-2px);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
+ <!-- Navigation -->
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="http://static.photos/technology/200x200/1" alt="Phantom Tech Academy Logo" class="h-10 mr-2">
+                <span class="text-xl font-bold text-blue-900">Phantom Tech Academy</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-blue-900 font-medium">About</a>
+                <a href="#programs" class="nav-link text-blue-900 font-medium">Programs</a>
+                <a href="#why-us" class="nav-link text-blue-900 font-medium">Why Choose Us</a>
+                <a href="#partnership" class="nav-link text-blue-900 font-medium">Partnership</a>
+                <a href="#contact" class="nav-link text-blue-900 font-medium">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i data-feather="menu" class="text-blue-900"></i>
+            </button>
+        </nav>
+    </header>
+    
+  
 
-  <!-- Navbar -->
-  <nav class="bg-yellow-600 text-white   fixed w-full shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">CHERIEHILL</p></h1>
-      <ul class="flex space-x-6 font-medium">
-        <li><a href="#home" class="hover:underline">Home</a></li>
-        <li><a href="#about" class="hover:underline">About</a></li>
-        <li><a href="#courses" class="hover:underline">Courses</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
+  
   <!-- Hero Section -->
   <section class="gradient-bg text-white pt-32 pb-20 md:pt-40 md:pb-28  overlay-bg">
         <div class="container mx-auto px-6 text-center overlay-bg">
@@ -70,7 +130,7 @@
   <!-- Courses Section -->
 <section id="courses" class="py-16 bg-yellow-600 transition">
   <div class="max-w-6xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center text-gray-900">Our Courses</h3>
+    <h3 class="text-3xl font-bold text-center text-gray-900">I.C.T TEST</h3>
     <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       
       <!-- Card 1 -->
@@ -125,7 +185,11 @@
         });
         feather.replace();
         
+        // Mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex');
+            menu.classList.toggle('hidden');
+        });
     </script>
-
 </body>
 </html>
