@@ -83,7 +83,7 @@
 }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50"    onload="startTime()">
  <!-- Navigation -->
     
    <!-- Navbar -->
@@ -143,9 +143,6 @@
     menu.classList.toggle("hidden");
   });
 </script>
-
-
-  
   <!-- Hero Section -->
   <section class="gradient-bg text-white pt-32 pb-20 md:pt-40 md:pb-28  overlay-bg">
         <div class="container mx-auto px-6 text-center overlay-bg">
@@ -228,7 +225,7 @@ Your future will surely shine bright.
       </a>
 
       <!-- Card 3 -->
-      <a href="ict-year4.html" 
+      <a href="https://test.gclocked.com/?form=-Oatc4UBtWdVC9AJTRL7" 
          class="block p-6 bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-yellow-600">
         <h4 class="text-xl font-semibold text-blue-600">I.C.T</h4>
         <p class="mt-2 text-gray-600">Year 4</p>
@@ -251,6 +248,38 @@ Your future will surely shine bright.
       </button>
     </form>
   </section> -->
+
+<!--  -->
+<div style="font-size: 50px;   transition: 2s;" id="txt"></div>
+<script>
+function startTime() {
+  const today = new Date();
+  let h,m,s;
+   h = today.getHours();
+   m = today.getMinutes();
+   s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+
+
+
+<!--  -->
+
+
+
+
+
 
   <!-- Footer -->
   <footer class="bg-yellow-600 text-white text-center py-4">
